@@ -197,9 +197,7 @@ Fixes issue with G+ login window not closing correctly on ios 9
                        @"accessToken"     : accessToken,
                        @"refreshToken"    : refreshToken,
                        @"userId"          : userId,
-                       @"displayName"     : user.profile.name       ? : [NSNull null],
-                       @"givenName"       : user.profile.givenName  ? : [NSNull null],
-                       @"familyName"      : user.profile.familyName ? : [NSNull null],
+                       @"displayName"     : user.profile.name ? : [NSNull null],
                        @"imageUrl"        : imageUrl ? imageUrl.absoluteString : [NSNull null],
                        };
 
